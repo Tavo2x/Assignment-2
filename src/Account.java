@@ -14,7 +14,7 @@ public abstract class Account {
     public void setAcctNum(int num){
         acctNo = num;
     }
-    public int getNum(){
+    public int getAcctNum(){
         return  acctNo;
     }
 //- Setting the first name & returing the first name

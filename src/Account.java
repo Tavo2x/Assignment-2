@@ -1,4 +1,5 @@
 public abstract class Account {
+//- Variables
     private int acctNo;
     private String FN;
     private String LN;

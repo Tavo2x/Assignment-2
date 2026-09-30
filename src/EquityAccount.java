@@ -11,6 +11,8 @@ public class EquityAccount extends Account{
 //- 
     @Override 
     public String getValue(){
+        // Get its current value of that said stock . 
+        // loop throuhg all stock prushace ask for the ticker symbol rthen pass though real time fgeed
         return "b";
     }
 }

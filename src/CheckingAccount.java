@@ -7,6 +7,7 @@ public class CheckingAccount extends Account {
     }
         @Override 
     public String getValue(){
+        // March through the transactions adding up all the deposits and then subtracting the sum of withdrawls.
         return "x";
     }
 }

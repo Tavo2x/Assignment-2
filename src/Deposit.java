@@ -1,5 +1,5 @@
 public class Deposit extends Transaction {
-    public Deposit(int val){
+    public Deposit(double val){
         super(val);
     }
     @Override

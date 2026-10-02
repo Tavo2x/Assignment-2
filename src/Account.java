@@ -39,7 +39,7 @@ public abstract class Account {
     public String getAddr(){
         return  addr;
     }
-// Abstract methods that subclasses must implement
+//- Abstract methods that subclasses must implement
     public abstract String getReport();
-    public abstract String getValue();
+    public abstract Double getValue();
 }

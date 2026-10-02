@@ -2,7 +2,7 @@ public abstract class Transaction {
 //- Variables
     private double amount;
 
-    Transaction(int val){
+    Transaction(double val){
         amount = val;
     }
 //- Setting the and returing the ammount(get)
@@ -12,6 +12,6 @@ public abstract class Transaction {
     public double retAmount(){
         return amount;
     }
-// Abstract method that subclasses must implement 
+//- Abstract method that subclasses must implement 
     public abstract double getAmount();
 }

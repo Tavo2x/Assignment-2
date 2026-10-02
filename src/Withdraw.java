@@ -1,5 +1,5 @@
 public class Withdraw extends Transaction{
-    public Withdraw(int val){
+    public Withdraw(double val){
         super(val);
     }
     @Override 

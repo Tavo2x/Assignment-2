@@ -41,5 +41,5 @@ public abstract class Account {
     }
 //- Abstract methods that subclasses must implement
     public abstract String getReport();
-    public abstract Double getValue();
+    public abstract double getValue();
 }

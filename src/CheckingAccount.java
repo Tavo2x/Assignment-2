@@ -5,9 +5,9 @@ public class CheckingAccount extends Account {
         public String getReport(){
         return "Account Number: " + getAcctNum() + "\n" + getFName() + " " + getLName() + "\n" + getAddr();
     }
-        @Override 
+    @Override 
     public String getValue(){
         // March through the transactions adding up all the deposits and then subtracting the sum of withdrawls.
-        return "x";
+        
     }
 }

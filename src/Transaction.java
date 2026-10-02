@@ -13,5 +13,5 @@ public abstract class Transaction {
         return amount;
     }
 // Abstract method that subclasses must implement 
-    public abstract String getAmount();
+    public abstract double getAmount();
 }

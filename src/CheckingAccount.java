@@ -24,9 +24,11 @@ public class CheckingAccount extends Account {
     }
     
     @Override 
-    public Double getValue(){
-        // March through the transactions adding up all the deposits and then subtracting the sum of withdrawls.
-        double y = 0;
-        return y;
+    public double getValue(){
+        double value = 0;
+        for(Transaction t : transactions){
+            value += t.getAmount();
+        }
+        return value;
     }
 }

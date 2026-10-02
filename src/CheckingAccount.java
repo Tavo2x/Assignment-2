@@ -22,7 +22,7 @@ public class CheckingAccount extends Account {
     public String getReport(){
         return "Account Number: " + getAcctNum() + "\n" + getFName() + " " + getLName() + "\n" + getAddr();
     }
-    
+// - Looping thorugh the number of transaction X account had to return the amount of that account
     @Override 
     public double getValue(){
         double value = 0;

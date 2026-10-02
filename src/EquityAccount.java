@@ -1,4 +1,7 @@
 public class EquityAccount extends Account{
+//- Array list of stock purchase (CREAT THIS THINGYMAWOP)
+
+
 //- 
     public EquityAccount(int accountNumber, String firstName, String lastName, String address){
         super(accountNumber, firstName, lastName, address);

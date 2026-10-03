@@ -1,21 +1,21 @@
 public abstract class Account {
 //- Variables
-    private int acctNo;
+    private String acctNo;
     private String FN;
     private String LN;
     private String addr;
 //-Account constructor
-    public Account(int accountNumber, String firstName, String lastName, String address){
+    public Account(String accountNumber, String firstName, String lastName, String address){
         acctNo = accountNumber;
         FN = firstName;
         LN = lastName;
         addr = address;
     }
 //- Setting the account number & returing the account number
-    public void setAcctNum(int num){
+    public void setAcctNum(String num){
         acctNo = num;
     }
-    public int getAcctNum(){
+    public String getAcctNum(){
         return  acctNo;
     }
 //- Setting the first name & returing the first name

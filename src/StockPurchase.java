@@ -3,9 +3,9 @@ public class StockPurchase {
     private String compName;
     private String tkrSym;
     private int qty; // Number of shares at the purchase price
-    private int PPS; // Price Per Share
+    private double PPS; // Price Per Share
 //- StockPurchase constructor
-    public StockPurchase(String companyName, String tickerSymbol, int numOfShares, int pricePerShare){
+    public StockPurchase(String companyName, String tickerSymbol, int numOfShares, double pricePerShare){
         compName = companyName;
         tkrSym = tickerSymbol;
         qty = numOfShares;
@@ -33,10 +33,10 @@ public class StockPurchase {
         return qty;
     }
 //- Setting the price per share number & returing the price per share number
-    public void pricePerShare(int pricePerShare){
+    public void setPricePerShare(int pricePerShare){
         PPS = pricePerShare;
     }
-    public int pricePerShare(){
+    public double getPricePerShare(){
         return  PPS;
     }
 }

@@ -1,10 +1,10 @@
 public abstract class Account {
-//- Variables
+//- Variables that make up an Account
     private String acctNo;
     private String FN;
     private String LN;
     private String addr;
-//-Account constructor
+//- Account constructor, variables are then set to the value passed
     public Account(String accountNumber, String firstName, String lastName, String address){
         acctNo = accountNumber;
         FN = firstName;

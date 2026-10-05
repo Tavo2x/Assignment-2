@@ -22,7 +22,7 @@ public class Checking extends Account {
 //- Returns a string showing the report of a checking account transactions
 //- Values are added to the string for example the account number, first and last name, and the address of the account
 //- Then we loop through the Transaction array and depending if it was a deposit or withdraw is the text you'l see before 
-//- seeing the amount the account withdrew or deposited
+//- Seeing the amount the account withdrew or deposited
     @Override
     public String getReport(){
         StringBuilder sb = new StringBuilder();
@@ -40,8 +40,8 @@ public class Checking extends Account {
         }
         return sb.toString();
     }
-//- Loopng through each transaction in the ArrayList
-//- adding the amount of each transactions amount then returning the value
+//- Looping through each transaction in the ArrayList
+//- Adding the amount of each transactions amount then returning the value
     @Override 
     public double getValue(){
         double value = 0;

@@ -2,16 +2,16 @@ import java.util.ArrayList;
 
 public class Checking extends Account {
     
-//- Array list of transactions that will store the accounts transactions
+//- ArrayList of transactions that will store the accounts transactions
     private ArrayList <Transaction> transactions = new ArrayList<Transaction>();
 
 //- Method for when an account makes a withdraw
-//- A Transaction object is created and added to the array list, holding the ammount the Account is intedning to withdraw
+//- A Transaction object is created and added to the ArrayList, holding the ammount the Account is intedning to withdraw
     public void withdraw(double amt){
         transactions.add(new Withdraw(amt));
     }
 //- Method for when an account makes a deposit
-//- A Transaction object is created and added to the array list, holding the amount the Account is intedning to deposit
+//- A Transaction object is created and added to the ArrayList, holding the amount the Account is intedning to deposit
     public void deposit(double amt){
         transactions.add(new Deposit(amt));
     }

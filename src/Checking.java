@@ -1,23 +1,28 @@
 import java.util.ArrayList;
 
 public class Checking extends Account {
-
+    
 //- Array list of transactions that will store the accounts transactions
     private ArrayList <Transaction> transactions = new ArrayList<Transaction>();
 
 //- Method for when an account makes a withdraw
+//- A Transaction object is created and added to the array list, holding the ammount the Account is intedning to withdraw
     public void withdraw(double amt){
         transactions.add(new Withdraw(amt));
     }
 //- Method for when an account makes a deposit
+//- A Transaction object is created and added to the array list, holding the amount the Account is intedning to deposit
     public void deposit(double amt){
         transactions.add(new Deposit(amt));
     }
-//-
+//- Constructor for Checking account, super is called in order to access the parents class constructor
     public Checking(String accountNumber, String firstName, String lastName, String address){
         super(accountNumber, firstName, lastName, address);
     }
-//- Shows the report of a checking cccount
+//- Returns a string showing the report of a checking account transactions
+//- Values are added to the string for example the account number, first and last name, and the address of the account
+//- Then we loop through the Transaction array and depending if it was a deposit or withdraw is the text you'l see before 
+//- seeing the amount the account withdrew or deposited
     @Override
     public String getReport(){
         StringBuilder sb = new StringBuilder();
@@ -35,7 +40,8 @@ public class Checking extends Account {
         }
         return sb.toString();
     }
-// - Looping thorugh the number of transaction X account had to return the amount of that account
+//- Loopng through each transaction in the ArrayList
+//- adding the amount of each transactions amount then returning the value
     @Override 
     public double getValue(){
         double value = 0;

@@ -1,7 +1,7 @@
 public class StockPurchase {
 //- Varriables
-    private String compName;
-    private String tkrSym;
+    private String compName; // company name
+    private String tkrSym; // ticker symbol
     private int qty; // Number of shares at the purchase price
     private double PPS; // Price Per Share
 //- StockPurchase constructor

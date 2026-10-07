@@ -36,10 +36,11 @@ public class Checking extends Account {
             else{
                 sb.append("Withdraw: ");
             }
-            sb.append(t.retAmount() + "\n");
+            sb.append(String.format("%.2f",t.retAmount()) + "\n");
         }
+        sb.append("Value: " + String.format("%.2f",getValue()) + "\n");
         return sb.toString();
-    }
+    }   
 //- Looping through each transaction in the ArrayList
 //- Adding the amount of each transactions amount then returning the value
     @Override 

@@ -32,9 +32,10 @@ public class Equity extends Account{
             sb.append(p.getTickerSymbol());
             sb.append(" ");
             sb.append(p.getNumberOfShares() + " shares");
-            sb.append(" at $" + p.getPricePerShare());
+            sb.append(" at $" + String.format("%.2f",p.getPricePerShare()));
             sb.append("\n");
         }
+        sb.append("Value: " + String.format("%.2f",getValue()) + "\n");
         return sb.toString();
     }
 //- Looping through each purchases in ArrayList

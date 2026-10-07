@@ -44,7 +44,7 @@ public class Portfolio{
                 outPut.println(a.getReport());
                 outPut.println("</pre>");
             }
-            outPut.println("<p> Total Value of account: " + getTotalValue() + "</p>");
+            outPut.println("<p> Total Portfolio Value: " + String.format("%.2f",getTotalValue()) + "</p>");
             outPut.println("</body></html>");
             outPut.close();
         }

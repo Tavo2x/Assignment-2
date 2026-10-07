@@ -2,7 +2,7 @@ public class Driver {
     public static void main(String[] args) {
         //create the RealTimeFeed from the mock data file
         //make sure this is a full path to the file
-        String equitiesFilePath = "/path/to/file/equities.txt";
+        String equitiesFilePath = "/Users/tavo-300/Desktop/equities.txt";
         RealTimeFeed realTimeFeed = new MockRealTimeFeed(equitiesFilePath);
 
         // Create a Portfolio to hold all accounts
